@@ -1,5 +1,5 @@
 const calculatePrice = (minutePrice, totalMin, minPlan) => {
-  
+
   if (minPlan > totalMin) {
     return 0;
   }
