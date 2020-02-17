@@ -1,8 +1,14 @@
 {{#if result}}
-<h1>R$ {{result.faleMais}}</h1>
-<h2>R$ {{result.normal}}</h2>
+<div class="com-fale-mais">
+  <h1>Com fale Mais</h1>
+  <h2>R$ {{result.faleMais}}</h2>
+</div>
+<div class="sem-fale-mais">
+  <h1>Sem fale Mais</h1>
+  <h2>R$ {{result.normal}}</h2>
+</div>
 {{else}}
-<p>Não existe pacotes para esse DDDs</p>
+<h1>Não existe pacotes para esse DDDs</h1>
 {{/if}}
 
 <a href="/">voltar</a>
