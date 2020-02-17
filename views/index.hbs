@@ -1,2 +1,14 @@
 <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p>
+
+<form action="/result" method="POST">
+  <input type="text" name="originDDD">
+  <input type="text" name="destinyDDD">
+  <input type="number" name="time">
+  <select name="faleMais">
+    <option value="30">FaleMais 30</option>
+    <option value="60">FaleMais 60</option>
+    <option value="120">FaleMais 120</option>
+  </select>
+  <button>calcular</button>
+</form>
