@@ -11,7 +11,3 @@ test('FaleMais 60 using 80 minutes', () => {
 test('FaleMais 120 using 200 minutes', () => {
   expect(calculatePrice(1.90, 200, 120)).toBe(167.20);
 })
-
-// test('FaleMais 60 using 80 minutes', () => {
-//   expect(calculatePrice(1.70, 80, 60)).toBe(37.40);
-// })
