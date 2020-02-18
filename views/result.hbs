@@ -1,14 +1,34 @@
 {{#if result}}
-<div class="com-fale-mais">
-  <h1>Com fale Mais</h1>
-  <h2>R$ {{result.faleMais}}</h2>
-</div>
-<div class="sem-fale-mais">
-  <h1>Sem fale Mais</h1>
-  <h2>R$ {{result.normal}}</h2>
+<div class="d-flex justify-content-center align-items-center h-100">
+  <div class="d-flex justify-content-around row w-100">
+    <div class="card shadow-sm mb-5 col-md-5 col-12">
+      <div class="card-body text-center">
+        <h1 class="card-title">Com fale Mais</h1>
+        <h2 class="card-subtitle">R$ {{result.faleMais}}</h2>
+      </div>
+    </div>
+    <div class="card shadow-sm mb-5 col-md-5 col-12">
+      <div class="card-body text-center">
+        <h1 class="card-title">Sem fale Mais</h1>
+        <h2 class="card-subtitle">R$ {{result.normal}}</h2>
+      </div>
+    </div>
+    <div class="col-12 text-center">
+      <a href="/" class="btn btn-primary mt-2">Voltar</a>
+    </div>
+  </div>
 </div>
 {{else}}
-<h1>Não existe pacotes para esse DDDs</h1>
+<div class="d-flex justify-content-center align-items-center h-100">
+  <div class="d-flex justify-content-center row w-100">
+    <div class="card shadow-sm mb-5 col-md-5 col-12">
+      <div class="card-body text-center">
+        <h1>Não existe pacotes para esse DDDs</h1>
+      </div>
+    </div>
+    <div class="col-12 text-center">
+      <a href="/" class="btn btn-primary mt-2">Voltar</a>
+    </div>
+  </div>
+</div>
 {{/if}}
-
-<a href="/">voltar</a>

@@ -7,10 +7,14 @@ a {
   color: #00B7FF;
 }
 
-.com-fale-mais {
-  border: 1px solid red;
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-.sem-fale-mais {
-  border: 1px solid black;
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
 }

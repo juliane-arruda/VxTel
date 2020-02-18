@@ -1,37 +1,38 @@
-<h1>{{title}}</h1>
-<p>Calcule Seus Minutos</p>
-
-<form action="/result" method="POST">
-  
-  <div class="form-row d-flex justify-content-center">
-    <div class="form-group col-lg-2 col-md-4 col-12">
-      <label for="origem">Origem</label>
-      <input type="text" name="originDDD" class="form-control" id="originDDD" placeholder="Ex: 011">
-    </div>
-    <div class="form-group col-lg-2 col-md-4 col-12">
-      <label for="destino">Destino</label>
-      <input type="text" name="destinyDDD" class="form-control" id="destinyDDD" placeholder="Ex: 016">
-    </div>
-    <div class="form-group col-lg-2 col-md-4 col-12">
-      <label for="tempo">Tempo</label>
-      <input type="text" name="time" class="form-control" id="time" placeholder="Ex: 20">
-    </div>
-    <div class="form-group col-lg-2 col-md-4 col-12">
-      <label for="plano">Plano FaleMais</label>
-      <select name="faleMais" id="faleMais" class="form-control">
-        <option selected> Selecione Seu Plano</option>
-        <option value="30">FaleMais 30</option>
-        <option value="60">FaleMais 60</option>
-        <option value="120">FaleMais 120</option>
-      </select>
-    </div>
-    <div class="col-auto col-md-4 col-12">
-      <br>
-      <button type="submit" class="btn btn-primary mt-2">Calcular</button>
+<form action="/result" method="POST" class="p-3 h-100 d-flex flex-column align-items-center">
+  <div class="text-center">
+    <h1>{{title}}</h1>
+    <p>Calcule Seus Minutos</p>
+  </div>
+  <div class="d-flex justify-content-center align-items-center h-100 w-100">
+    <div class="form-row justify-content-around w-100 align-items-center">
+      <div class="form-group">
+        <label for="origem">Origem (DDD)</label>
+        <input type="text" name="originDDD" class="form-control" id="originDDD" placeholder="Ex: 011">
+      </div>
+      <div class="form-group">
+        <label for="destino">Destino (DDD)</label>
+        <input type="text" name="destinyDDD" class="form-control" id="destinyDDD" placeholder="Ex: 016">
+      </div>
+      <div class="form-group">
+        <label for="tempo">Tempo (Minutos)</label>
+        <input type="number" name="time" class="form-control" id="time" placeholder="Ex: 20">
+      </div>
+      <div class="form-group">
+        <label for="plano">Plano FaleMais</label>
+        <select name="faleMais" id="faleMais" class="form-control">
+          <option selected> Selecione Seu Plano</option>
+          <option value="30">FaleMais 30</option>
+          <option value="60">FaleMais 60</option>
+          <option value="120">FaleMais 120</option>
+        </select>
+      </div>
+      <div class="mt-2">
+        <button type="submit" class="btn btn-primary">Calcular</button>
+      </div>
     </div>
   </div>
 
-{{!-- <label for="origem">Origem</label>
+  {{!-- <label for="origem">Origem</label>
   <input type="text" name="originDDD">
   <label for="destino">Destino</label>
   <input type="text" name="destinyDDD">
